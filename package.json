@@ -1,0 +1,14 @@
+{
+  "name": "portofolio-project",
+  "version": "1.0.0",
+  "description": "portfolio project",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o /assets/css/main.css --recursive"
+  },
+  "author": "Riwandi",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
