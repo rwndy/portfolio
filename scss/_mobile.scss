@@ -1,0 +1,62 @@
+// widescreen
+
+@include media_xl {
+   
+}
+
+//desktop dan laptop {
+  @include media_lg {
+   
+  }
+
+//tablet {
+  @include media_md {
+   main {
+     text-align: center;
+     align-items: center;
+
+     .lg-heading {
+       line-height: 1;
+       margin-bottom: 1rem;
+     }
+   }
+
+   ul.menu-nav,
+   div.menu-branding {
+     float: none;
+     width: 100%;
+     min-height: 0;
+
+     &.show {
+      transform: translate3d(0,0,0);
+     }
+   }
+
+   .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+   }
+
+   .menu-branding {
+     height: 25vh;
+     transform: translate3d(100%, 0, 0);
+
+     .potrait {
+       background: url('/assets/img/riwandy.jpg');
+       background-position: center;
+       background-size: cover;
+       width: 150px;
+       height: 150px;
+     }
+   }
+  }
+
+//phone 
+
+@include media_sm {
+  main#home h1 {
+    margin-top: 10vh;
+  }
+   
+}
