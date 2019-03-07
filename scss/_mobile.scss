@@ -1,12 +1,16 @@
 // widescreen
 
 @include media_xl {
-   
+   .projects {
+     grid-template-columns: repeat(4, 1fr);
+   }
 }
 
 //desktop dan laptop {
   @include media_lg {
-   
+    .projects {
+    grid-template-columns: repeat(3, 1fr);
+    }
   }
 
 //tablet {
@@ -58,6 +62,9 @@
 
     grid-template-columns: 1fr;
   }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 //phone 
@@ -66,5 +73,7 @@
   main#home h1 {
     margin-top: 10vh;
   }
-   
+   .projects {
+    grid-template-columns: 1fr;
+   }
 }

@@ -46,6 +46,10 @@ header {
   width: 100%;
 }
 
+.text-secondary {
+  color: $secondary-color;
+}
+
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px);
@@ -92,6 +96,52 @@ main {
     grid-area: bio;
     font-size: 1.5rem;
   }
+}
+
+// Work
+.projects {
+  display: grid;
+  grid-gap: .7rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    border: 3px solid #f1c40f;
+
+    &:hover {
+      opacity: .5;
+      @include easeOut;
+    }
+  }
+}
+
+
+.btn {
+  display: block;
+  padding: .5rem 1rem;
+  border: 0;
+  margin-bottom: .3rem;
+
+  &:hover {
+    background: #f1c40f;
+    color: #fff;
+  }
+}
+
+.btn-light {
+  @extend .btn;
+  margin-right: -.3rem;
+  margin-left: .4rem;
+  background: lighten($primary-color, 50);
+  color: #333;
+}
+
+.btn-dark {
+  @extend .btn;
+  margin-right: -.3rem;
+  margin-left: .4rem;
+  background: darken($primary-color, 50);
+  color: #fff;
 }
 
 #footer {
