@@ -50,7 +50,15 @@
        height: 150px;
      }
    }
+
+   .about-info {
+    grid-template-areas:
+      'aboutava'
+      'bio';
+
+    grid-template-columns: 1fr;
   }
+}
 
 //phone 
 
