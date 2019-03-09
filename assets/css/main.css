@@ -285,4 +285,7 @@ main {
       margin-top: 1rem;
       font-size: 5rem; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  body #bg-img {
+    background-position: center;
+    background-size: cover; } }
