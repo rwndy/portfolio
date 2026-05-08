@@ -1,0 +1,9 @@
+export { XpBar } from "./XpBar";
+export { GameNav } from "./GameNav";
+export { HeroSection } from "./HeroSection";
+export { AboutSection } from "./AboutSection";
+export { SkillsSection } from "./SkillsSection";
+export { ExperienceSection } from "./ExperienceSection";
+export { ProjectsSection } from "./ProjectsSection";
+export { FooterSection } from "./FooterSection";
+export { TweaksPanel } from "./TweaksPanel";
